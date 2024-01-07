@@ -1,24 +1,11 @@
 # linux-clash
 
-## 离线下载
+- [安装](#安装)
+- [配置](#配置clash)
 
-### 离线下载clash以及相关工具
+## 安装
 
-[clash 网盘链接](https://wwi.lanzouy.com/iFWQ9hoalyb)
-[clash 仓库链接](https://github.com/sephony/clash/blob/main/clash-linux-amd64-v1.2.0.gz)
-[mmdb github链接](https://github.com/Dreamacro/maxmind-geoip/releases/download/20231212/Country.mmdb)
-[mmdb 仓库链接](https://github.com/sephony/clash/blob/main/Country.mmdb)
-
-### 安装clash
-
-```bash
-mv clash-linux-amd64-v1.2.0 clash
-tar -xzvf clash.tar.gz
-```
-
-## 在线下载
-
-### 在线下载clash以及相关工具
+### 下载clash以及相关工具
 
 #### 文件说明
 
@@ -27,9 +14,19 @@ tar -xzvf clash.tar.gz
   里面放着clash的接口,控制参数，链接信息等
 - **ip数据库**~/.config/clash/Country.mmdb
 
-#### 快速执行
+以下两种方式采用其中一种即可
 
-#### 分步执行
+#### 快速安装
+
+```bash
+if command -v curl >/dev/null 2>&1; then
+    bash -c "$(curl -fsSL https://github.com/sephony/clash/blob/main/install.sh)"
+else
+    bash -c "$(wget -O- <https://github.com/sephony/clash/blob/main/install.sh>)"
+fi
+```
+
+#### 分步安装
 
 ```bash
 wget https://github.com/sephony/clash/releases/download/linux/clash-linux-amd64.tar.gz
@@ -41,7 +38,14 @@ cp -vr clash-linux-amd64/Country ~/.config
 rm -rf clash-linux-amd64
 ```
 
-### 配置clash
+如果上面下载失效，可以从下面的链接下载
+
+[clash 网盘链接](https://wwi.lanzouy.com/iFWQ9hoalyb)
+[clash 仓库链接](https://github.com/sephony/clash/blob/main/clash-linux-amd64-v1.2.0.gz)
+[mmdb github链接](https://github.com/Dreamacro/maxmind-geoip/releases/download/20231212/Country.mmdb)
+[mmdb 仓库链接](https://github.com/sephony/clash/blob/main/Country.mmdb)
+
+## 配置clash
 
 执行clash命令，生成配置文件
 
