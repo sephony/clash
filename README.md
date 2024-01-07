@@ -5,9 +5,9 @@
 ### 离线下载clash以及相关工具
 
 [clash 网盘链接](https://wwi.lanzouy.com/iFWQ9hoalyb)
-[clash 本地链接]()
+[clash 仓库链接](https://github.com/sephony/clash/blob/main/clash-linux-amd64-v1.2.0.gz)
 [mmdb github链接](https://github.com/Dreamacro/maxmind-geoip/releases/download/20231212/Country.mmdb)
-[mmdb 本地链接](https://github.com/sephony/clash/blob/main/Country.mmdb)
+[mmdb 仓库链接](https://github.com/sephony/clash/blob/main/Country.mmdb)
 
 ### 安装clash
 
