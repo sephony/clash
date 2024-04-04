@@ -39,8 +39,8 @@ cd clash-linux-amd64
 chmod +x clash
 # 复制文件
 sudo cp -vr clash /usr/local/bin/
-mkdir -p ~/.config
-cp -vr Country.mmdb ~/.config
+mkdir -p ~/.config/clash
+cp -vr Country.mmdb ~/.config/clash
 # 删除文件夹
 rm -rf clash-linux-amd64
 ```
