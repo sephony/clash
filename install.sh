@@ -6,17 +6,16 @@ wget https://github.com/sephony/clash/releases/download/linux/clash-linux-amd64.
 # 解压文件
 tar -xzvf clash-linux-amd64.tar.gz
 
-# 重命名文件夹
-mv clash-linux-amd64 clash
+# 进入文件夹
+cd clash-linux-amd64
 
 # 修改文件权限
 chmod +x clash
 
-# 移动文件
-sudo mv clash/clash /usr/local/bin/
-
 # 复制文件
-cp -vr clash/Country ~/.config
+sudo cp -vr clash /usr/local/bin/
+mkdir -p ~/.config
+cp -vr Country.mmdb ~/.config
 
 # 删除文件夹
-rm -rf clash
+rm -rf clash-linux-amd64
