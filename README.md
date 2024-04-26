@@ -183,7 +183,9 @@ INFO[0000] RESTful API listening at: 127.0.0.1:9090
 
 #### 控制台设置
 
-在控制台页面，点击 “设置” -> “外部控制设置”，填入地址：(要和配置文件中的外部监听地址`external-controller`一致)
+接下来浏览器打开[clash控制台](http://clash.razord.top/)
+
+在控制台页面，点击 `设置` -> `外部控制设置`，填入地址：(要和配置文件中的外部监听地址`external-controller`一致)
 
 > Host：127.0.0.1
 > 端口： 9090
