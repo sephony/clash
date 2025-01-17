@@ -85,7 +85,7 @@ rm -rf clash-linux-amd64
 
 ```bash
 # 解压文件
-tar -xzvf clash-linux-amd64-v1.2.0.gz
+gzip -d clash-linux-amd64-v1.2.0.gz
 # 修改文件名
 mv clash-linux-amd64-v1.2.0 clash
 # 修改文件权限
